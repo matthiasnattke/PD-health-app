@@ -1,0 +1,538 @@
+@import url('http://fonts.googleapis.com/css?family=Domine:400,700|PT+Serif:400,700,400italic,700italic');
+
+/*
+Design Name: LNU blank
+Author: Matthias Nattke 2016
+
+*/
+
+/* Reset
+--------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, img, strong, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+#content address {
+	padding: 0 0 20px 0;
+}
+#content abbr, acronym {
+	border-bottom: .1em dotted;
+}
+#content pre, code, tt {
+	font-size: 1.1em;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Basics and main styles
+------------------------------------------- */
+
+h1 {
+    font: bold 2.0em/1.2em 'PT Serif';
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: #4e5a49;
+    letter-spacing:-1.2px;
+}
+
+h2 {
+    font: bold 1.7em/1.2em 'PT Serif';
+    margin: 0 auto 0 auto;
+    color: #4e5a49;
+    text-align: center;
+    letter-spacing:-1.2px;
+}
+
+h3 {
+    font: bold 1.3em/1.2em 'PT Serif';
+    margin: 0 auto 0 auto;
+    color: #4e5a49;
+    text-align: center;
+    letter-spacing:-1.2px;
+}
+
+p, table {
+    font: 1.25em/1.0em 'Domine';
+    color: #000;
+}
+
+label {
+    font: 1.0em/1.0em 'Domine';
+    color: #000;
+}
+
+.thead{
+    background: #0163a0;
+}
+
+th, td{
+    color: #ffffff;
+    padding: 5px 30px;
+}
+
+tbody{
+    background: #0085b5;
+}
+
+.white p {
+    color: #f7f7f7;   
+}
+
+.white strong {
+    color: #fff;
+    font-weight: bold;
+}
+
+a {
+    color: #ea7b0a;
+    text-decoration: none;
+    width: auto; 
+}
+
+a:hover {
+    color: #1f6d9f;
+}
+
+.white a {
+    color: #fff;    
+}
+
+.white a:hover {
+    color: #ea7b0a;     
+}
+
+nav a {
+    color: #000;
+    -moz-text-shadow: 1px 1.732px 16px rgba(0, 0, 0, 0.004);
+    text-shadow: 1px 1.732px 16px rgba(0, 0, 0, 0.004);
+    -webkit-text-shadow: 0 1px 0 #E2007A, 0 -1px 0 #E2007A, 1px 0 0 #E2007A, -1px 0 0 #E2007A;
+}
+
+
+nav a:hover {
+    color: #ea7b0a;
+    text-decoration: none;
+    width: auto; 
+}
+
+strong {
+    font-weight: bold;
+    color: #4e5a49;
+}
+
+video {
+    width: 50%;
+    height: auto;
+}
+
+.shadowbottom {
+    box-shadow: inset 0 -10px 10px -10px #000000;
+    -moz-box-shadow: inset 0 -10px 10px -10px #000000;
+    -webkit-box-shadow: inset 0 -10px 10px -10px #000000;
+}
+
+.shadowtop {
+    box-shadow: inset 0 10px 10px -10px #000000;
+    -moz-box-shadow: inset 0 10px 10px -10px #000000;
+    -webkit-box-shadow: inset 0 10px 10px -10px #000000;
+}
+
+.shadowpic {
+    -moz-box-shadow:    inset  0 -220px 80px -80px rgba(0, 0, 0, 0.7);;
+    -webkit-box-shadow: inset  0 -220px 80px -80px rgba(0, 0, 0, 0.7);;
+     box-shadow:        inset  0 -220px 80px -80px rgba(0, 0, 0, 0.7);;
+}
+
+.shadowtext {
+    -moz-text-shadow: 0px -1px 12px rgba(0, 0, 0, 1); 
+    -webkit-text-shadow: 0px -1px 12px rgba(0, 0, 0, 1);  
+    text-shadow: 0px -1px 14px rgba(0, 0, 0, 1);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #393939;
+}
+
+header {
+    display: block;
+}
+
+footer {
+    background: #436c33;
+    display: block;
+}
+
+header nav {
+    min-height: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+header nav ul { 
+    min-height: 40px;
+    white-space: inherit;
+}
+
+header nav li, header nav liclick  {
+    font: 1.25em 'PT Serif';
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    padding: 5px 10px;
+    list-style: none;
+}
+
+header nav liclick {
+    background-color: #ffeb00;
+}
+
+footer nav {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+footer nav ul { 
+    min-height: 40px;
+    padding: 0;
+    white-space: inherit;
+}
+
+footer nav li {
+    font: 1.0em 'PT Serif';
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background: #fff;
+    list-style: none;
+    /*display: none;*/  
+}
+
+.button-green, .button-red, .button-yellow, .button-blue {
+    color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font: 1.3em 'PT Serif';   
+    padding: 10px 15px;
+    margin:  5px;
+    border-style: solid;
+    border-color: black;
+    border: 0;
+    display: inline-block;
+    cursor:pointer;
+}
+
+.button-green {
+    background: #358809;
+}
+
+.button-red {
+    background: #ff7946;
+}
+
+.button-yellow {
+    background: #ffc400;
+}
+
+.button-blue {
+    background: #1d8ac3;
+}
+
+.button-green:hover {
+    background: #9eff6b;
+}
+
+.button-red:hover {
+    background: #f8a889;
+}
+
+.button-yellow:hover {
+    background: #ffc400;
+}
+
+.button-blue:hover {
+    background: #155c81;
+}
+
+.mobil {
+    display: none;
+}
+
+header img {
+    display: block;
+    margin: 0px auto;
+    max-width: 80%;
+}
+
+figure{
+    background: #fff top no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.bigpicture p {
+    font: 2.5em 'PT Serif';
+    margin: 20% 0 0 0;
+    position: absolute;
+    color: #fff;
+    width: 100%;  
+}
+
+.bigpicture address {
+    font: 1.13em 'PT Serif'; 
+    position: absolute; 
+    width: 100%;
+    color: #fff;
+    margin-top: 25%;
+}
+
+.bigpicture .subtitle {
+    font: 1.13em 'PT Serif'; 
+    position: absolute; 
+    width: 100%;
+    color: #fff;
+    margin-top: -130px;
+    white-space: pre-line;
+}
+
+.pic-container {
+    max-width: 80%;
+    margin: 0px auto;    
+    display: table;
+    min-height: 50px;
+}
+
+.pic-overview {
+    min-height: 100px;  
+}
+
+.pic-overview figure {
+    display: table-cell;
+    padding: 0 4px;
+    text-align: center;
+}
+
+.pic-overview img {
+    width: 100%;
+}
+
+.description {
+    white-space: pre-line;
+    margin: 30px 0 0 0px;
+    text-align: center;
+}
+
+.description p, .description table{
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font: 20px/1.8em 'Domine';
+    color: #807c7c; 
+}
+
+/* Diagrams */
+
+.axis path,
+.axis line {
+  fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+.axis text {
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.x.axis path {
+  display: none;
+}
+
+/* Map */
+
+      #map {
+        height: 300px;
+      }
+
+/* Media queries for responsive design
+--------------------------------------------- */
+
+
+/* iPad Landscape */
+@media screen and (max-width: 1120px) {
+
+.button-green, .button-red, .button-yellow {
+    margin: 20px;
+}    
+    
+.apartments figcaption {
+    margin-top: 6%;
+}
+    
+#offers img {
+    margin: 3% 0% 12% 0;
+    max-width: 11%;
+}
+    
+}
+
+/* iPad Portrait */
+@media screen and (max-width: 940px) {
+ 
+video {
+    width: 100%;
+}
+    
+    
+.button-green, .button-red, .button-yellow {
+    margin: 10px;
+} 
+    
+#offers img {
+    margin: 5% 0% 18% 0;
+    max-width: 13%;
+}
+    
+.pic-container {
+    max-width: 80%;
+    margin: 0px auto;    
+    display: table;
+    min-height: 50px;
+}
+
+.pic-overview {
+    min-height: 100px;  
+}
+
+.pic-overview figure {
+    display: block;
+    padding: 0 4px;
+    text-align: center;
+}
+    
+}
+
+/* Smartphones and small Tablet PCs */
+@media screen and (max-width : 620px) {
+    
+h1 {
+    font: bold 1.8em/1.0em 'PT Serif';
+}
+
+h2 {
+    font: bold 1.4em/1.2em 'PT Serif';
+}
+    
+.bigpicture p {
+    font: 1.7em 'PT Serif';
+    margin: 20% 0 0 0;
+    position: absolute;
+    color: #fff;
+    width: 100%;  
+}
+
+.bigpicture address {
+    margin-top: 35%;
+}
+    
+header nav li, header nav liclick, .apartments nav li, .apartment nav liclick {
+    font: 1.25em "PT Serif";
+    position: relative;
+    float: none;
+    text-align: center;
+    display: block;
+}
+
+footer nav {
+    max-width: 275px;
+    margin: 0 auto;
+}
+    
+footer nav li {
+    font: 0.8em 'PT Serif';  
+}
+    
+.pic-container {
+    max-width: 100%;
+}
+    
+    
+#offers img {
+    margin: 5% 0% 40% 0;
+    max-width: 13%;
+}
+    
+.contact {
+    
+    height: 800px;
+
+}
+
+/* Smartphones and small Tablet PCs */
+@media screen and (max-width : 620px) and (orientation:landscape) {
+    
+    
+.button-green, .button-red, .button-yellow {
+    font: 1.2em 'PT Serif';   
+    padding: 10px 25px;
+    margin: 10px;
+}
+    
+.bigpicture {
+    height: 300px;   
+}
+    
+.pic-container {
+    max-width: 100%;
+}
+    
+#offers img {
+    margin: 1% 0% 21% 0;
+    max-width: 11%;
+}
+    
+    
+}

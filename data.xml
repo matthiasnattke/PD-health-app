@@ -1,0 +1,42 @@
+<EData>
+<test_sessionID id="1">
+<therapyID>1</therapyID>
+<User_IDmed>1</User_IDmed>
+<User_IDpatient>3</User_IDpatient>
+<medicineID>1</medicineID>
+<therapy_listID>1</therapy_listID>
+<testID>2</testID>
+<test_datetime>2009-12-01 18:00:00</test_datetime>
+<DataURL>data1</DataURL>
+</test_sessionID>
+<test_sessionID id="2">
+<therapyID>1</therapyID>
+<User_IDmed>1</User_IDmed>
+<User_IDpatient>3</User_IDpatient>
+<medicineID>1</medicineID>
+<therapy_listID>1</therapy_listID>
+<testID>2</testID>
+<test_datetime>2009-12-01 18:00:00</test_datetime>
+<DataURL>data2</DataURL>
+</test_sessionID>
+<test_sessionID id="3">
+<therapyID>1</therapyID>
+<User_IDmed>1</User_IDmed>
+<User_IDpatient>3</User_IDpatient>
+<medicineID>1</medicineID>
+<therapy_listID>1</therapy_listID>
+<testID>2</testID>
+<test_datetime>2009-12-02 18:00:00</test_datetime>
+<DataURL>data3</DataURL>
+</test_sessionID>
+<test_sessionID id="4">
+<therapyID>1</therapyID>
+<User_IDmed>1</User_IDmed>
+<User_IDpatient>3</User_IDpatient>
+<medicineID>1</medicineID>
+<therapy_listID>1</therapy_listID>
+<testID>2</testID>
+<test_datetime>2009-12-02 18:00:00</test_datetime>
+<DataURL>data4</DataURL>
+</test_sessionID>
+</EData>
