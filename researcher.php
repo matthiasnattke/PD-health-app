@@ -33,4 +33,14 @@
                           
              }
             
-    ?>
+
+    echo "<h2>Latest news in PHD research</h2></br>";
+
+    // load file or give exception
+    $xml=simplexml_load_file("http://www.news-medical.net/tag/feed/Parkinsons-Disease.aspx") or die("Error: Cannot create object");
+    // discover all item in channel tree and display them
+    foreach($xml->channel->item as $items) { 
+    echo "<h3><a href=\"".$items->link."\">".$items->title."</a></h3><br>"; 
+    echo "<p>$items->description</p><br>"; 
+    } 
+?>
